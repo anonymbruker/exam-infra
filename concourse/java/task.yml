@@ -1,0 +1,17 @@
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: maven
+    tag: alpine
+
+inputs:
+  - name: source
+  - name: exam-infra
+
+outputs:
+  - name: jar-file
+
+run:
+  path: exam-infra/concourse/java/task.sh
