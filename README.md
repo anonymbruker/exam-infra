@@ -3,9 +3,9 @@ Infra for monitoring example
 ## fly command
 my  command
 ```
-fly -t pgr301 set-pipeline -c exam-infra/concourse/pipeline.yml -l exam-infra/credentials.yml -p pipeline_name
+fly -t pgr301 sp -p pipeline_name -c concourse/pipeline.yml -l credentials.yaml
 ```
 command template
 ```
-fly -t <target> set-pipeline -c <root-folder>/concourse/pipeline.yml -l <root-folder>/credentials.yml -p pipeline_name
+fly -t ≤target> sp -p pipeline_name -c concourse/pipeline.yml -l credentials.yaml
 ```
